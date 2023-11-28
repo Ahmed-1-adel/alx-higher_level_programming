@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-import string
-lowerCasesLetters = list(string.ascii_lowercase)
-for alphabet in lowerCasesLetters:
-     print(alphabet)
+for i in range(ord("a"), ord("z") + 1):
+     print("{:c}".format(i), end="")
