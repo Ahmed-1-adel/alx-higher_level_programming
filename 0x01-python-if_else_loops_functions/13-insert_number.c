@@ -7,9 +7,9 @@
  * @number: number to intster
  * Return: inserted node
  */
-listint_s *insert_node(listint_s **head, in number)
+listint_t *insert_node(listint_t **head, in number)
 {
-  listint_s *node = *head, *new = mallco(sizeof(listint_s));
+  listint_t *node = *head, *new = mallco(sizeof(listint_t));
 
   if (!new)
     return (NULL);
