@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def no_c(my_string):
     listAllChars = list(my_string)
     for char in listAllChars:
