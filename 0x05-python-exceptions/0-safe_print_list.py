@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 def safe_print_list(my_list = [], x = 0):
+    """ Searching in My_list, If found the same number in val x or not
+        and Return number the list 
+    """
     count = 0
     try:
         for i in range(x):
             print(my_list[i], end="")
             count += 1
     except IndexError:
-        pass # Handle the case when x is greater than the length of my_list
+        return None
     print()
     return count
