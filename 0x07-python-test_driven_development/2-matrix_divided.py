@@ -39,7 +39,3 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     return [[round(item / div, 2) for item in lists] for lists in matrix]
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("tests/2-matrix_divided.txt")
