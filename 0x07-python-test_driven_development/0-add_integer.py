@@ -16,7 +16,6 @@ def add_integer(a, b=98):
         The sum of the two integers.
     """
 
-
     if not isinstance(a, int) and not isinstance(b, int):
         raise TypeError("a must be an integer")
     if not isinstance(a, float) and not isinstance(b, float):
