@@ -5,5 +5,5 @@ Module with the method lookpu
 """
 
 def lookpu(obj):
-    """Func return the Attr for an object"""
+    """Return a list of an object's available attribute"""
     return dir(obj)
