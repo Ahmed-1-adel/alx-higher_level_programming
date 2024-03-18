@@ -4,7 +4,7 @@ import MySQLdb
 from sys import argv
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     # make a connection to the database
 
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     # through the same connection to the database.
 
     mycursor = mydb.cursor()
-    mycursor.execute("SELECT * FROM states")
+    mycursor.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     rows = mycursor.fetchall()
     for i in rows:
